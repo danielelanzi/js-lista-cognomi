@@ -6,20 +6,20 @@ var arrayCognomi = ['Magliozzi','Pacifico','Baglini','Bottini','Campagnolo','Car
 var cognomeUtente = prompt('Qual\'è il tuo cognome?');
 
 // Prima lettera cognome utente maiuscola
-cognomeMaiuscolo = cognomeUtente.charAt().toUpperCase() + cognomeUtente.substring(1);
+cognomeUtente = cognomeUtente.charAt().toUpperCase() + cognomeUtente.substring(1);
 
 // Inserimento cognome utente all'interno della lista
-arrayCognomi.push(cognomeMaiuscolo);
+arrayCognomi.push(cognomeUtente);
 
 // Lista cognomi in ordine alfabetico
 arrayCognomi.sort();
 
 // Variabile indicazione posizione utente
-var posizione = arrayCognomi.indexOf(cognomeMaiuscolo);
+var posizione = arrayCognomi.indexOf(cognomeUtente);
 
 // Verifiche nella console
   // Inserimento cognome utente
-  console.log('Il tuo cognome è: ' + cognomeMaiuscolo);
+  console.log('Il tuo cognome è: ' + cognomeUtente);
   // La posizione dell'utente
   console.log('La tua posizione è: ' + (posizione + 1));
   // Lista array ordinata dei cognomi con cognome utente da Prompt
